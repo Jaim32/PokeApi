@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Búsqueda de Pokémon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pokédex</h1>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <form id="pokemon-form">
+        <label for="pokemon-search">Busca un Pokémon:</label>
+        <input type="text" id="pokemon-search" placeholder="Nombre o número de Pokédex">
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <section id="pokemon-list" class="pokemon-list">
+      <!-- Aquí se mostrarán las cards de los Pokémon -->
+    </section>
+
+    <button id="load-more" class="load-more hidden">Cargar más Pokémon</button>
+
+    <section id="pokemon-card" class="pokemon-card hidden">
+      <div class="pokemon-image">
+        <img id="pokemon-img" src="" alt="Imagen de Pokémon">
+      </div>
+      <div class="pokemon-info">
+        <h2 id="pokemon-name"></h2>
+        <p>Número de Pokédex: <span id="pokemon-id"></span></p>
+        <p>Tipo(s): <span id="pokemon-types"></span></p>
+        <h3>Estadísticas:</h3>
+        <ul id="pokemon-stats"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
